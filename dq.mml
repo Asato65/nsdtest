@@ -1,0 +1,22 @@
+#AUTO-BANKSWITCH 0
+
+; @t1, x
+; 14400 / t = x (x: int)
+; tempo=100のときx=144 -> @t1, 144
+; v0~15
+; @1 duty 0~3 (12.5%, 25%, 50%, 75%)
+; o4 -> オクターブ
+; l8 -> long，8分音符を基準に
+; c1 -> cを全音符で鳴らす
+; b4 -> bを4分音符で鳴らす
+
+ABC @t1, 120
+
+A v12 @1 o5 l4
+A c8.c16 fgab-> cf2e8.d16 d4.c8 r8 <b8b8>d8 c<a2
+
+B v12 @1 o4 l4
+B b-8.b-16 a>cfff2f2 b-.a8r8g+8g+8b8a4f2
+
+C o4 l4
+C r fee-d<a2b-2> fc<f>ff<a>cf

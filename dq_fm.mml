@@ -1,0 +1,28 @@
+#title "DQ"
+#Label "DQ"
+#bgm	1
+
+Sub(0) {
+	t120 v12 o5 l4 c8.c16 fgab-> cf2e8.d16 d4.c8 r8 <b8b8>d8 c<a2
+}
+Sub(1) {
+	t120 v12 o4 l4 b-8.b-16 a>cfff2f2 b-.a8r8g+8g+8b8a4f2
+}
+Sub(2) {
+	t120 o4 l4 r fee-d<a2b-2> fc<f>ff<a>cf
+}
+BGM(0) {
+	TR1 S0
+	TR2 S1
+	TR3 S2
+}
+
+; @t1, x
+; 14400 / t = x (x: int)
+; tempo=100のときx=144 -> @t1, 144
+; v0~15
+; @1 duty 0~3 (12.5%, 25%, 50%, 75%)
+; o4 -> オクターブ
+; l8 -> long，8分音符を基準に
+; c1 -> cを全音符で鳴らす
+; b4 -> bを4分音符で鳴らす
