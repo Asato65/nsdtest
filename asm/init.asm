@@ -1,3 +1,7 @@
+		.import DQBGM0
+bgm0:
+		.addr	DQBGM0
+
 .macro init
 	sei									; IRQ禁止
 	cld									; BCD禁止
@@ -67,7 +71,19 @@
 	lda #$03
 	sta OAM_DMA
 
+	lda SOUND_CHANNEL
+	ora #%00000001
+	sta SOUND_CHANNEL
+	lda #%10011111
+	sta SOUND_CH1_1						; Duty50%(2)、ループ無し、音響固定、ボリューム最大(4)
+	lda #%00000000
+	sta SOUND_CH1_2						; 周波数変化なし（bit7）、他は設定せず
+
 	jsr _nsd_init
+
+	lda	bgm0
+	ldx	bgm0 + 1
+	jsr	_nsd_play_bgm
 
 	; スクリーンON
 	lda #%10010000						; |NMI-ON|PPU=MASTER|SPR8*8|BG$1000|SPR$0000|VRAM+1|SCREEN$2000|

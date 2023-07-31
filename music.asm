@@ -9,10 +9,6 @@
 
 .include "nes.inc"
 .include "nsd.inc"
-.import _nsd_main
-.import _nsd_play_bgm
-.global _nsd_main
-.global _nsd_play_bgm
 
 .include "ppu.asm"
 .include "macro.asm"

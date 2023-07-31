@@ -1,7 +1,6 @@
 ; NMI処理
 
-.import _nsd_main
-.import _nsd_play_bgm
+.import _nsd_main_bgm
 
 ;*------------------------------------------------------------------------------
 ; PPU_UPDATE_DATAを読み取り，指定アドレスに書き込んでカウンタをインクリメント
@@ -16,21 +15,11 @@
 	inx
 .endmacro
 
-		.import DQBGM0
-bgm0:
-		.addr	DQBGM0
-
 .proc NMI
 		registerSave
 
-		lda $ef
-		beq @SKIP
-		lda	DQBGM0
-		ldx	DQBGM0 + 1
-		jsr	_nsd_play_bgm
-@SKIP:
-		lda #0
-		sta $ef
+		inc frm_cnt
+		jsr _nsd_main_bgm
 
 		registerLoad
 		rti	; --------------------------
