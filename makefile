@@ -5,7 +5,7 @@ NES_FILE = $(MAIN_FILE).nes
 DBG_FILE = $(MAIN_FILE).dbg
 CFG_FILE = .vscode/memmap.cfg
 
-MUSIC_FILE = dq_fm
+MUSIC_FILE = smb
 MUSIC_MML_FILE = $(MUSIC_FILE).mml
 MUSIC_ASM_FILE = $(MUSIC_FILE).s
 MUSIC_OBJ_FILE = $(MUSIC_FILE).o

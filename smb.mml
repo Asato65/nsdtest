@@ -1,0 +1,62 @@
+#title "DQ"
+#Label "DQ"
+#bgm	1
+
+Sub(0) {
+	t120 v15 o5 l16 @4
+	// intro
+	eere rcer gr8. r4
+	// A
+	[2 : o5
+	cr8<gr8er rarb rb-ar l12 g>eg l16 arfg rerc d<br8
+	]
+	// B
+	[2 : o5
+	r8gg-fd#re r<g#a>c r<a>cd r8gg-fd#re >rcrc cr8.< r8gg-fd#re r<g#a>c r<a>cd r8e-r8dr8cr8.r4
+	]
+	// C
+	ccrc rcdr ecr<a gr8.> ccrc rcde r2 ccrc rcdr ecr<a gr8.
+	// intro
+	>eere rcer gr8. r4
+	// A
+	[2 : o5
+	cr8<gr8er rarb rb-ar l12 g>eg l16 arfg rerc d<br8
+	]
+	// D
+	[2 : o5
+	ecr<g r8g#r a>frf< ar8. l12 b>aa agf l16 ecr<a gr8.>
+	ecr<g r8g#r a>frf< ar8. b>frf l12 fed l16 cr8.r4
+	]
+	// C
+	ccrc rcdr ecr<a gr8.> ccrc rcde r2 ccrc rcdr ecr<a gr8.
+	// intro
+	>eere rcer gr8. r4
+	// D
+	[2 : o5
+	ecr<g r8g#r a>frf< ar8. l12 b>aa agf l16 ecr<a gr8.>
+	ecr<g r8g#r a>frf< ar8. b>frf l12 fed l16 cr8.r4
+	]
+}
+
+; Sub(1) {
+; 	t120 v12 o6 l16
+; }
+; Sub(2) {
+; 	t120 o6 l16 ccrc rcdr ecr<a gr8.> ccrc rcde r2 ccrc rcdr ecr<a gr8.
+; }
+
+BGM(0) {
+	TR1 S0
+	; TR2 S1
+	; TR3 S2
+}
+
+; @t1, x
+; 14400 / t = x (x: int)
+; tempo=100のときx=144 -> @t1, 144
+; v0~15
+; @1 duty 0~3 (12.5%, 25%, 50%, 75%)
+; o4 -> オクターブ
+; l8 -> long，8分音符を基準に
+; c1 -> cを全音符で鳴らす
+; b4 -> bを4分音符で鳴らす
