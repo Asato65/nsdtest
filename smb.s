@@ -8,10 +8,14 @@
 
 .segment	"RODATA"
 DQSUB0:
-	.byte	$08 ,$78
 	.byte	$3c
 	.byte	$4b
-	.byte	$1b ,$04
+	.byte	$1b ,$02
+	.byte	$58
+	.byte	$16 ,$2e
+	.byte	$08 ,$64
+	.byte	$8f
+	.byte	$8f
 	.byte	$84
 	.byte	$84
 	.byte	$8f
@@ -633,9 +637,656 @@ DQSUB0:
 	.byte	$80
 	.byte	$af ,$12
 	.byte	$af ,$18
+	.byte	$00
+DQSUB1:
+	.byte	$3b
+	.byte	$4b
+	.byte	$1b ,$02
+	.byte	$58
+	.byte	$16 ,$2e
+	.byte	$08 ,$64
+	.byte	$8f
+	.byte	$8f
+	.byte	$86
+	.byte	$86
+	.byte	$8f
+	.byte	$86
+	.byte	$8f
+	.byte	$86
+	.byte	$86
+	.byte	$8f
+	.byte	$8b
+	.byte	$af ,$12
+	.byte	$87
+	.byte	$af ,$12
+	.byte	$84
+	.byte	$af ,$0c
+	.byte	$80
+	.byte	$af ,$0c
+	.byte	$28
+	.byte	$87
+	.byte	$8f
+	.byte	$29
+	.byte	$8f
+	.byte	$80
+	.byte	$8f
+	.byte	$82
+	.byte	$8f
+	.byte	$81
+	.byte	$80
+	.byte	$8f
+	.byte	$4a
+	.byte	$80
+	.byte	$87
+	.byte	$29
+	.byte	$80
+	.byte	$4b
+	.byte	$80
+	.byte	$8f
+	.byte	$28
+	.byte	$89
+	.byte	$8b
+	.byte	$8f
+	.byte	$89
+	.byte	$8f
+	.byte	$84
+	.byte	$85
+	.byte	$82
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$af ,$0c
+	.byte	$80
+	.byte	$af ,$0c
+	.byte	$28
+	.byte	$87
+	.byte	$8f
+	.byte	$29
+	.byte	$8f
+	.byte	$80
+	.byte	$8f
+	.byte	$82
+	.byte	$8f
+	.byte	$81
+	.byte	$80
+	.byte	$8f
+	.byte	$4a
+	.byte	$80
+	.byte	$87
+	.byte	$29
+	.byte	$80
+	.byte	$4b
+	.byte	$80
+	.byte	$8f
+	.byte	$28
+	.byte	$89
+	.byte	$8b
+	.byte	$8f
+	.byte	$89
+	.byte	$8f
+	.byte	$84
+	.byte	$85
+	.byte	$82
+	.byte	$af ,$0c
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$83
+	.byte	$82
+	.byte	$28
+	.byte	$8b
+	.byte	$29
+	.byte	$8f
+	.byte	$80
+	.byte	$8f
+	.byte	$28
+	.byte	$84
+	.byte	$85
+	.byte	$89
+	.byte	$8f
+	.byte	$80
+	.byte	$84
+	.byte	$85
+	.byte	$29
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$83
+	.byte	$82
+	.byte	$28
+	.byte	$8b
+	.byte	$29
+	.byte	$8f
+	.byte	$80
+	.byte	$8f
+	.byte	$85
+	.byte	$8f
+	.byte	$85
+	.byte	$85
+	.byte	$af ,$12
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$83
+	.byte	$82
+	.byte	$28
+	.byte	$8b
+	.byte	$29
+	.byte	$8f
+	.byte	$80
+	.byte	$8f
+	.byte	$28
+	.byte	$84
+	.byte	$85
+	.byte	$89
+	.byte	$8f
+	.byte	$80
+	.byte	$84
+	.byte	$85
+	.byte	$af ,$0c
+	.byte	$88
+	.byte	$af ,$0c
+	.byte	$85
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$af ,$12
+	.byte	$af ,$18
+	.byte	$3b
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$83
+	.byte	$82
+	.byte	$28
+	.byte	$8b
+	.byte	$29
+	.byte	$8f
+	.byte	$80
+	.byte	$8f
+	.byte	$28
+	.byte	$84
+	.byte	$85
+	.byte	$89
+	.byte	$8f
+	.byte	$80
+	.byte	$84
+	.byte	$85
+	.byte	$29
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$83
+	.byte	$82
+	.byte	$28
+	.byte	$8b
+	.byte	$29
+	.byte	$8f
+	.byte	$80
+	.byte	$8f
+	.byte	$85
+	.byte	$8f
+	.byte	$85
+	.byte	$85
+	.byte	$af ,$12
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$83
+	.byte	$82
+	.byte	$28
+	.byte	$8b
+	.byte	$29
+	.byte	$8f
+	.byte	$80
+	.byte	$8f
+	.byte	$28
+	.byte	$84
+	.byte	$85
+	.byte	$89
+	.byte	$8f
+	.byte	$80
+	.byte	$84
+	.byte	$85
+	.byte	$af ,$0c
+	.byte	$88
+	.byte	$af ,$0c
+	.byte	$85
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$af ,$12
+	.byte	$af ,$18
+	.byte	$88
+	.byte	$88
+	.byte	$8f
+	.byte	$88
+	.byte	$8f
+	.byte	$88
+	.byte	$8a
+	.byte	$8f
+	.byte	$87
+	.byte	$84
+	.byte	$8f
+	.byte	$84
+	.byte	$80
+	.byte	$af ,$12
+	.byte	$88
+	.byte	$88
+	.byte	$8f
+	.byte	$88
+	.byte	$8f
+	.byte	$88
+	.byte	$8a
+	.byte	$87
+	.byte	$af ,$30
+	.byte	$88
+	.byte	$88
+	.byte	$8f
+	.byte	$88
+	.byte	$8f
+	.byte	$88
+	.byte	$8a
+	.byte	$8f
+	.byte	$87
+	.byte	$84
+	.byte	$8f
+	.byte	$84
+	.byte	$80
+	.byte	$af ,$12
+	.byte	$86
+	.byte	$86
+	.byte	$8f
+	.byte	$86
+	.byte	$8f
+	.byte	$86
+	.byte	$86
+	.byte	$8f
+	.byte	$8b
+	.byte	$af ,$12
+	.byte	$87
+	.byte	$af ,$12
+	.byte	$3b
+	.byte	$84
+	.byte	$af ,$0c
+	.byte	$80
+	.byte	$af ,$0c
+	.byte	$28
+	.byte	$87
+	.byte	$8f
+	.byte	$29
+	.byte	$8f
+	.byte	$80
+	.byte	$8f
+	.byte	$82
+	.byte	$8f
+	.byte	$81
+	.byte	$80
+	.byte	$8f
+	.byte	$4a
+	.byte	$80
+	.byte	$87
+	.byte	$29
+	.byte	$80
+	.byte	$4b
+	.byte	$80
+	.byte	$8f
+	.byte	$28
+	.byte	$89
+	.byte	$8b
+	.byte	$8f
+	.byte	$89
+	.byte	$8f
+	.byte	$84
+	.byte	$85
+	.byte	$82
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$af ,$0c
+	.byte	$80
+	.byte	$af ,$0c
+	.byte	$28
+	.byte	$87
+	.byte	$8f
+	.byte	$29
+	.byte	$8f
+	.byte	$80
+	.byte	$8f
+	.byte	$82
+	.byte	$8f
+	.byte	$81
+	.byte	$80
+	.byte	$8f
+	.byte	$4a
+	.byte	$80
+	.byte	$87
+	.byte	$29
+	.byte	$80
+	.byte	$4b
+	.byte	$80
+	.byte	$8f
+	.byte	$28
+	.byte	$89
+	.byte	$8b
+	.byte	$8f
+	.byte	$89
+	.byte	$8f
+	.byte	$84
+	.byte	$85
+	.byte	$82
+	.byte	$af ,$0c
+	.byte	$80
+	.byte	$28
+	.byte	$87
+	.byte	$8f
+	.byte	$84
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$8f
+	.byte	$85
+	.byte	$29
+	.byte	$82
+	.byte	$8f
+	.byte	$82
+	.byte	$28
+	.byte	$85
+	.byte	$af ,$12
+	.byte	$4a
+	.byte	$87
+	.byte	$29
+	.byte	$85
+	.byte	$85
+	.byte	$85
+	.byte	$84
+	.byte	$82
+	.byte	$4b
+	.byte	$80
+	.byte	$28
+	.byte	$89
+	.byte	$8f
+	.byte	$85
+	.byte	$84
+	.byte	$af ,$12
+	.byte	$29
+	.byte	$80
+	.byte	$28
+	.byte	$87
+	.byte	$8f
+	.byte	$84
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$8f
+	.byte	$85
+	.byte	$29
+	.byte	$82
+	.byte	$8f
+	.byte	$82
+	.byte	$28
+	.byte	$85
+	.byte	$af ,$12
+	.byte	$87
+	.byte	$29
+	.byte	$82
+	.byte	$8f
+	.byte	$82
+	.byte	$4a
+	.byte	$82
+	.byte	$80
+	.byte	$28
+	.byte	$8b
+	.byte	$4b
+	.byte	$87
+	.byte	$84
+	.byte	$8f
+	.byte	$84
+	.byte	$80
+	.byte	$af ,$12
+	.byte	$3b
+	.byte	$80
+	.byte	$28
+	.byte	$87
+	.byte	$8f
+	.byte	$84
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$8f
+	.byte	$85
+	.byte	$29
+	.byte	$82
+	.byte	$8f
+	.byte	$82
+	.byte	$28
+	.byte	$85
+	.byte	$af ,$12
+	.byte	$4a
+	.byte	$87
+	.byte	$29
+	.byte	$85
+	.byte	$85
+	.byte	$85
+	.byte	$84
+	.byte	$82
+	.byte	$4b
+	.byte	$80
+	.byte	$28
+	.byte	$89
+	.byte	$8f
+	.byte	$85
+	.byte	$84
+	.byte	$af ,$12
+	.byte	$29
+	.byte	$80
+	.byte	$28
+	.byte	$87
+	.byte	$8f
+	.byte	$84
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$8f
+	.byte	$85
+	.byte	$29
+	.byte	$82
+	.byte	$8f
+	.byte	$82
+	.byte	$28
+	.byte	$85
+	.byte	$af ,$12
+	.byte	$87
+	.byte	$29
+	.byte	$82
+	.byte	$8f
+	.byte	$82
+	.byte	$4a
+	.byte	$82
+	.byte	$80
+	.byte	$28
+	.byte	$8b
+	.byte	$4b
+	.byte	$87
+	.byte	$84
+	.byte	$8f
+	.byte	$84
+	.byte	$80
+	.byte	$af ,$12
+	.byte	$88
+	.byte	$88
+	.byte	$8f
+	.byte	$88
+	.byte	$8f
+	.byte	$88
+	.byte	$8a
+	.byte	$8f
+	.byte	$87
+	.byte	$84
+	.byte	$8f
+	.byte	$84
+	.byte	$80
+	.byte	$af ,$12
+	.byte	$88
+	.byte	$88
+	.byte	$8f
+	.byte	$88
+	.byte	$8f
+	.byte	$88
+	.byte	$8a
+	.byte	$87
+	.byte	$af ,$30
+	.byte	$88
+	.byte	$88
+	.byte	$8f
+	.byte	$88
+	.byte	$8f
+	.byte	$88
+	.byte	$8a
+	.byte	$8f
+	.byte	$87
+	.byte	$84
+	.byte	$8f
+	.byte	$84
+	.byte	$80
+	.byte	$af ,$12
+	.byte	$86
+	.byte	$86
+	.byte	$8f
+	.byte	$86
+	.byte	$8f
+	.byte	$86
+	.byte	$86
+	.byte	$8f
+	.byte	$8b
+	.byte	$af ,$12
+	.byte	$87
+	.byte	$af ,$12
+	.byte	$3b
+	.byte	$80
+	.byte	$28
+	.byte	$87
+	.byte	$8f
+	.byte	$84
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$8f
+	.byte	$85
+	.byte	$29
+	.byte	$82
+	.byte	$8f
+	.byte	$82
+	.byte	$28
+	.byte	$85
+	.byte	$af ,$12
+	.byte	$4a
+	.byte	$87
+	.byte	$29
+	.byte	$85
+	.byte	$85
+	.byte	$85
+	.byte	$84
+	.byte	$82
+	.byte	$4b
+	.byte	$80
+	.byte	$28
+	.byte	$89
+	.byte	$8f
+	.byte	$85
+	.byte	$84
+	.byte	$af ,$12
+	.byte	$29
+	.byte	$80
+	.byte	$28
+	.byte	$87
+	.byte	$8f
+	.byte	$84
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$8f
+	.byte	$85
+	.byte	$29
+	.byte	$82
+	.byte	$8f
+	.byte	$82
+	.byte	$28
+	.byte	$85
+	.byte	$af ,$12
+	.byte	$87
+	.byte	$29
+	.byte	$82
+	.byte	$8f
+	.byte	$82
+	.byte	$4a
+	.byte	$82
+	.byte	$80
+	.byte	$28
+	.byte	$8b
+	.byte	$4b
+	.byte	$87
+	.byte	$84
+	.byte	$8f
+	.byte	$84
+	.byte	$80
+	.byte	$af ,$12
+	.byte	$3b
+	.byte	$80
+	.byte	$28
+	.byte	$87
+	.byte	$8f
+	.byte	$84
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$8f
+	.byte	$85
+	.byte	$29
+	.byte	$82
+	.byte	$8f
+	.byte	$82
+	.byte	$28
+	.byte	$85
+	.byte	$af ,$12
+	.byte	$4a
+	.byte	$87
+	.byte	$29
+	.byte	$85
+	.byte	$85
+	.byte	$85
+	.byte	$84
+	.byte	$82
+	.byte	$4b
+	.byte	$80
+	.byte	$28
+	.byte	$89
+	.byte	$8f
+	.byte	$85
+	.byte	$84
+	.byte	$af ,$12
+	.byte	$29
+	.byte	$80
+	.byte	$28
+	.byte	$87
+	.byte	$8f
+	.byte	$84
+	.byte	$af ,$0c
+	.byte	$84
+	.byte	$8f
+	.byte	$85
+	.byte	$29
+	.byte	$82
+	.byte	$8f
+	.byte	$82
+	.byte	$28
+	.byte	$85
+	.byte	$af ,$12
+	.byte	$87
+	.byte	$29
+	.byte	$82
+	.byte	$8f
+	.byte	$82
+	.byte	$4a
+	.byte	$82
+	.byte	$80
+	.byte	$28
+	.byte	$8b
+	.byte	$4b
+	.byte	$87
+	.byte	$84
+	.byte	$8f
+	.byte	$84
+	.byte	$80
+	.byte	$af ,$12
 	.byte	$00
 DQBGM0:
-	.byte	$01, $0
-	.word	$0004
-	.byte	$02 ,$41 ,$fd
-	.byte	$00
+	.byte	$02, $0
+	.word	$0006 ,$000c
+	.byte	$02 ,$71 ,$fa
+	.byte	$01 ,$fc ,$ff
+	.byte	$02 ,$2a ,$fd
+	.byte	$01 ,$fc ,$ff
