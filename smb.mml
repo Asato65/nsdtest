@@ -114,59 +114,30 @@ Sub(2) {
 	]
 }
 
+$n1 {
+    @0 o6c
+}
+
+$n2 {
+	@1 o5b
+}
+
 Sub(3) {
-	l4 @0 o5c o5c+ o5d o5d+ o5e o5f o5f+ o5g o5g+ o5a o5a+ o5b o6c o6c+ o6d o6d+
-	l4 @1 o5c o5c+ o5d o5d+ o5e o5f o5f+ o5g o5g+ o5a o5a+ o5b o6c o6c+ o6d o6d+
+	; l4 @0 o6c	; o5c o5c+ o5d o5d+ o5e o5f o5f+ o5g o5g+ o5a o5a+ o5b o6c o6c+ o6d o6d+
+	; l4 @1 o5b	; o5c o5c+ o5d o5d+ o5e o5f o5f+ o5g o5g+ o5a o5a+ o5b o6c o6c+ o6d o6d+
 	; l4 o2 g
-	/*
-	31 63 761
-	31=55930 63=27965->300
-	// intro
-	l16 e-8b-e-8b-e-8e-8.e-8b-b-b-
-	//A
-	l24 [8
-	b-8b-12b-e-8b-12b-
-	]
-	//B
-	l24 [16
-	b-8b-12b-e-8b-12b-
-	]
-	//C
-	l16 [3
-	e-8b-e-8b-e-8e-8.e-8b-b-b-
-	]
-	//intro
-	l16 e-8b-e-8b-e-8e-8.e-8b-b-b-
-	//A
-	l24 [8
-	b-8b-12b-e-8b-12b-
-	]
-	//D
-	l8  [16
-	b-.b-16e-b-
-	]
-	//C
-	l16 [3
-	e-8b-e-8b-e-8e-8.e-8b-b-b-
-	]
-	//intro
-	l16 e-8b-e-8b-e-8e-8.e-8b-b-b-
-	//D
-	l8  [16
-	b-.b-16e-b-
-	]
-	*/
+	$n1 r $n1 r $n1 r $n1 r $n1 r
 }
 
 BGM(0) {
 	TR1 t100 v15 o4 l16 @2 q8 s46 Rv0 L
 	TR2 t100 v15 o4 l16 @2 q8 s46 Rv0 L
 	TR3 t100     o4 l16    q8     Rv0 L
-	TR4 t100 v5  o6 l16    q8 s46 Rv0 L
-	; TR1 S0
-	; TR2 S1
-	; TR3 S2
-	TR4 S3
+	TR4 t100 v5     l8    q8 s46 Rv0 L
+	TR1 S0
+	TR2 S1
+	TR3 S2
+	; TR4 S3
 }
 
 ; @t1, x
