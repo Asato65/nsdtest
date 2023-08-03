@@ -1,6 +1,5 @@
 .setcpu "6502"
 .feature c_comments
-.autoimport on
 
 .include "const.inc"
 .include "palette.inc"
